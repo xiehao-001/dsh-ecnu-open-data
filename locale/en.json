@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "ECNU open data",
+    "description": "Read ECNU personnel, student and staff data from the university open-data platform.",
+    "detail": "Adds read-only tools for the East China Normal University open-data gateway: personnel lookup, student and staff profiles, photos, positions and an allowlisted query tool. Institutional reads use the platform client credentials; data about the signed-in person uses the university SSO login. Sensitive, facial-recognition, verification and message-sending endpoints are never exposed."
+  }
+}

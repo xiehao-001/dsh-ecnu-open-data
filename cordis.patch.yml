@@ -1,0 +1,17 @@
+# Installed by the bundle patch: one row with the public ECNU defaults.
+# Credentials are never written here; they live in the DSH credential store
+# under the references below.
+- insert:
+    - id: ecnu-open-data
+      name: '@eduwork/dsh-ecnu-open-data'
+      config:
+          apiBaseURL: "https://api.ecnu.edu.cn"
+          scope: "ECNU-Basic"
+          redirectUri: "http://127.0.0.1:47823/oauth2/callback"
+          clientIdRef: "ECNU_OPENAPI_CLIENT_ID"
+          clientSecretRef: "ECNU_OPENAPI_CLIENT_SECRET"
+          userTokenRef: "ECNU_OPENAPI_USER_TOKEN"
+          requestTimeoutMs: 20000
+          rateLimitPerMinute: 240
+          allowGenericQuery: true
+          recordLimit: 200
